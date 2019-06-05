@@ -163,7 +163,6 @@
         </div>
         <section class="separadorGrande"></section>    
 
-
         {if ($tipo == 'pabellon')}
             <h2 class="text-center">Cancela las sesiones que quieras haciendo una reserva interna</h2>
             <div class="row">
