@@ -181,10 +181,8 @@
                 <br>
 
                 <div class="card card-image accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
-
                     <!-- Accordion card -->
                     <div class="card">
-
                         <!-- Card header -->
                         <div class="card-header" role="tab" id="headingTwo1">
                             <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
