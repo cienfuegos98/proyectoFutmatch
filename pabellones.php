@@ -146,7 +146,7 @@ foreach ($datos as $pabellones) {
         $action = "action = 'calendario.php'";
     }
     $listadoPabellones .= "
-                    <div class = 'col-lg-6 col-md-6 mb-lg-0 mb-4 pabellon'>
+                    <div class = 'col-lg-4 col-md-6 mb-lg-0 mb-4 pabellon'>
                     <div class = 'card collection-card z-depth-1-half'>
                     <div class=' zoom-1 overflow-hidden'>
                     <div class = 'view zoom'>

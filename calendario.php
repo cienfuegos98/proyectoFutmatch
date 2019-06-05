@@ -109,7 +109,7 @@ if (isset($_POST ['desconectar'])) {
 $tipo = $_SESSION['tipo'];
 $plantilla->assign('tipo', $tipo);
 
-var_dump($_SESSION);
+
 
 $con->cerrar();
 $plantilla->display("calendario.tpl"

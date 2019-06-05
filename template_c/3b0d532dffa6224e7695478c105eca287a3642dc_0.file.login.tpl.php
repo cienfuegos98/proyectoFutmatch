@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-03 21:32:11
+/* Smarty version 3.1.33, created on 2019-06-04 17:55:01
   from 'C:\xampp\htdocs\proyecto_fin\template\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf575bbc60354_01949667',
+  'unifunc' => 'content_5cf694559c80f0_05689653',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3b0d532dffa6224e7695478c105eca287a3642dc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto_fin\\template\\login.tpl',
-      1 => 1559590331,
+      1 => 1559663700,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf575bbc60354_01949667 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf694559c80f0_05689653 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
@@ -124,7 +124,7 @@ function content_5cf575bbc60354_01949667 (Smarty_Internal_Template $_smarty_tpl)
                                         </div>
                                         <div class="text-center">
                                             <span class="nuevo" >¿Eres nuevo?</span> 
-                                            <a  class="olvidado-contrasena" href="#" data-ancla="registro" class="ancla">Registrate ahora</a>
+                                            <a class="olvidado-contrasena ancla" href="#" data-ancla="registro" >Registrate ahora</a>
                                         </div>
                                     </form>
                                 </div>

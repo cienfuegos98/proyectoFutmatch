@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-04 04:06:24
+/* Smarty version 3.1.33, created on 2019-06-05 13:32:47
   from 'C:\xampp\htdocs\proyecto_fin\template\calendario.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf5d220809d73_12065936',
+  'unifunc' => 'content_5cf7a85ff1c5d7_90436064',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2b95795ee8ffaf9ef010d72538171db164339488' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto_fin\\template\\calendario.tpl',
-      1 => 1559613983,
+      1 => 1559734365,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf5d220809d73_12065936 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf7a85ff1c5d7_90436064 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
     <head>
@@ -172,137 +172,76 @@ function content_5cf5d220809d73_12065936 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                 </div>
             </nav>
-            <br>
-            <section class="portadaPabellones text-center w-100 row mx-0">
-                <h1 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text"><?php echo $_smarty_tpl->tpl_vars['nombrePab']->value;?>
+
+        </div>
+        <br><br>
+        <section class="portadaPabellones text-center w-100 row mx-0">
+            <h1 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text"><?php echo $_smarty_tpl->tpl_vars['nombrePab']->value;?>
 </h1>
-                <p class="subtitulo white-text text-center mx-auto mb-5">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
-                    hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
-            </section>
-        </div>
-        <div id="contenidoPrincipal">
+            <p class="subtitulo white-text text-center mx-auto mb-5">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
+                hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
+        </section>
 
+        <section class="separadorGrande"></section>
+        <section class="row seccionMargenes">
+            <div class="container">
+                <div class="card">
+                    <div class="container-fliud">
+                        <div class="wrapper row">
+                            <div class="col-md-12">
 
-            <!--Aqui solo mostraré habilitados las horas que no esten cogidas de ese día-->
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
-                    <div class = 'view zoom'>
-                        <div class="input-group date" data-provide="datepicker" id="datepicker"></div>
-                        <div id="respuesta"></div>
-                        <div id="respuesta2"></div>
-                        <button disabled href="calendario.php" data-toggle="modal" id="a_modal" class="btn btn-primary" data-target="#exampleModal2" >PROCEDER A LA RESERVA</button>
-                        <!--<a id="a_modal" class="btn btn-primary">PROCEDER A LA RESERVA</a>-->
-                    </div>
-                </div>
-                <img src="<?php echo $_smarty_tpl->tpl_vars['imagen']->value;?>
-"/>
-            </div>
-            <div><?php echo $_smarty_tpl->tpl_vars['nombrePab']->value;?>
-</div>
-            <div><?php echo $_smarty_tpl->tpl_vars['direccionP']->value;?>
-</div>
-            <div><?php echo $_smarty_tpl->tpl_vars['ciudad']->value;?>
-</div>
-            <div><?php echo $_smarty_tpl->tpl_vars['cod_postal']->value;?>
-</div>
-            <div><?php echo $_smarty_tpl->tpl_vars['telefono']->value;?>
-</div>
-            <div><?php echo $_smarty_tpl->tpl_vars['horario']->value;?>
-</div>
-            <div><?php echo $_smarty_tpl->tpl_vars['descripcion']->value;?>
-</div>
-            <div><?php echo $_smarty_tpl->tpl_vars['otros_servicios']->value;?>
-</div>
-            <div><?php echo $_smarty_tpl->tpl_vars['accesibilidad']->value;?>
-</div>
-            <div><?php echo $_smarty_tpl->tpl_vars['tarifa']->value;?>
-</div>
+                                <div class=" imgPr">
+                                    <div class="productImg" style="background-image: url(<?php echo $_smarty_tpl->tpl_vars['imagen']->value;?>
+)"></div>
+                                </div>
+                            </div>
+                            <div class="details col-md-12 col-xl-7 col-lg-6">
+                                <h3 class="product-title"><?php echo $_smarty_tpl->tpl_vars['nombrePab']->value;?>
+</h3>
+                                <h5><?php echo $_smarty_tpl->tpl_vars['categoria']->value;?>
+</h5>
 
-        </div>
-
-        <!---------------- Modal -------------------->
-        <!---------------- Modal -------------------->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel" style="margin-left:40%">MI PERFIL</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="text-center" style="margin-top:5%"><?php echo $_smarty_tpl->tpl_vars['foto_modal']->value;?>
-</div>
-                    <div class="modal-body" style="padding-left:10%; padding-right:10%; ">
-                        User: <?php echo $_smarty_tpl->tpl_vars['nombre']->value;?>
-
-                        <br>
-                        Email: <?php echo $_smarty_tpl->tpl_vars['email']->value;?>
-
-                        <br>
-                        Password <?php echo $_smarty_tpl->tpl_vars['pass']->value;?>
-
-                        <br>
-                        Nombre completo: <?php echo $_smarty_tpl->tpl_vars['nombreC']->value;?>
-
-                        <br>
-                        Fecha de Nacimiento: <?php echo $_smarty_tpl->tpl_vars['fecha']->value;?>
-
-                        <br>
-                        Dirección: <?php echo $_smarty_tpl->tpl_vars['direccion']->value;?>
-
-
-                    </div>
-                    <div class="modal-footer" style="justify-content: center">
-                        <form method = 'POST' action = 'pabellones.php'>
-                            <input type = 'submit' type='submit' class='btn btn-primary' name = 'desconectar' value = 'desconectar'>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--MODAL DE CONFIRMACION-->
-        <div class="modal fade show" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title " id="exampleModalLabel" style="margin-left:30%">TUS PREFERENCIAS</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="text-center" style="margin-top:5%">Estas seguro de que quieres reservar?</div>
-                    <div class="modal-body text-center">
-                        <div class="row justify-content-center w-20">
-                            <div class=" float-left">
-                                Fecha de la reserva: <div id="fechamodal"></div>
-                                Hora de la reserva: <div id="horamodal"></div>
-                                En el pabellon: <?php echo $_smarty_tpl->tpl_vars['nombrePab']->value;?>
+                                <p class="product-description"><?php echo $_smarty_tpl->tpl_vars['descripcion']->value;?>
+</p>
+                                <h4 class="price"><span><?php echo $_smarty_tpl->tpl_vars['tarifa']->value;?>
+ </span></h4>
+                                <strong>Más información:</strong>
+                                <p>Dirección: <?php echo $_smarty_tpl->tpl_vars['direccionP']->value;?>
+</br>
+                                    Ciudad: <?php echo $_smarty_tpl->tpl_vars['ciudad']->value;?>
+</br>
+                                    Codigo postal: <?php echo $_smarty_tpl->tpl_vars['cod_postal']->value;?>
+</br>
+                                    Telefono: <?php echo $_smarty_tpl->tpl_vars['telefono']->value;?>
+</br>
+                                    Otros servicios:<?php echo $_smarty_tpl->tpl_vars['otros_servicios']->value;?>
+</br>
+                                    Accesibilidad: <?php echo $_smarty_tpl->tpl_vars['accesibilidad']->value;?>
+</br>
+                                </p>
 
                             </div>
-                            <div class="modal-footer" style="justify-content: center">
-                                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
-                                    <input name="cmd" type="hidden" value="_cart" />
-                                    <input name="upload" type="hidden" value="1" />
-                                    <input name="business" type="hidden" value="pgmcastillo98-facilitator@gmail.com" />
-                                    <input name="shopping_url" type="hidden" value="http://localhost/proyecto_fin/reservas.php" />
-                                    <input name="currency_code" type="hidden" value="EUR" />
-                                    <input name="return" type="hidden" value="http://localhost/proyecto_fin/reservas.php" />
-                                    <input name="notify_url" type="hidden" value="http://localhost/proyecto_fin/reservas.php" />
-                                    <input name="rm" type="hidden" value="2" />
-                                    <input type="submit" class="btn btn-primary" name="paypal" alt="Realice pagos con PayPal: es rápido, gratis y seguro" value="REALIZAR PAGO">
-                                    <?php echo $_smarty_tpl->tpl_vars['hiddenPay']->value;?>
-
-                                </form>
-                                <form action="calendario.php" method='post'>
-                                    <input type="submit"  class="btn btn-primary" name="cancelar" value="CANCELAR">
-                                </form>
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+                                <div class="mx-auto text-center">
+                                    <div class="input-group date my-5" data-provide="datepicker" id="datepicker"></div>
+                                    <div id="respuesta"></div>
+                                    <div id="respuesta2"></div>
+                                    <button disabled href="calendario.php" data-toggle="modal" id="a_modal" class="btn btn-primary mx-auto" data-target="#exampleModal2" >PROCEDER A LA RESERVA</button>
+                                    <!--<a id="a_modal" class="btn btn-primary">PROCEDER A LA RESERVA</a>-->
+                                    <section class="separadorGrande"></section>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
+                <section class="separadorGrande"></section>    
             </div>
+
+
+
+            <!---------------- Modal -------------------->
+            <!---------------- Modal -------------------->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -315,23 +254,36 @@ function content_5cf5d220809d73_12065936 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="text-center" style="margin-top:5%"><?php echo $_smarty_tpl->tpl_vars['foto_modal']->value;?>
 </div>
                         <div class="modal-body" style="padding-left:10%; padding-right:10%; ">
-                            <?php echo $_smarty_tpl->tpl_vars['contenidoModal']->value;?>
+                            User: <?php echo $_smarty_tpl->tpl_vars['nombre']->value;?>
+
+                            <br>
+                            Email: <?php echo $_smarty_tpl->tpl_vars['email']->value;?>
+
+                            <br>
+                            Password <?php echo $_smarty_tpl->tpl_vars['pass']->value;?>
+
+                            <br>
+                            Nombre completo: <?php echo $_smarty_tpl->tpl_vars['nombreC']->value;?>
+
+                            <br>
+                            Fecha de Nacimiento: <?php echo $_smarty_tpl->tpl_vars['fecha']->value;?>
+
+                            <br>
+                            Dirección: <?php echo $_smarty_tpl->tpl_vars['direccion']->value;?>
+
 
                         </div>
                         <div class="modal-footer" style="justify-content: center">
                             <form method = 'POST' action = 'pabellones.php'>
-                                <a class='btn btn-primary' href = 'reservas.php' >Modificar</a>
                                 <input type = 'submit' type='submit' class='btn btn-primary' name = 'desconectar' value = 'desconectar'>
-                                <div class="text-center" >
-                                    <a data-toggle="modal" data-target="#exampleModal2" id="enlace_borrar">Eliminar cuenta</a>
-                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!--MODAL DE CONFIRMACION-->
-            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade show" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -340,41 +292,109 @@ function content_5cf5d220809d73_12065936 (Smarty_Internal_Template $_smarty_tpl)
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="text-center" style="margin-top:5%">Estas seguro de que quieres borrar tu cuenta?
-                            Despues de ello no podrás acceder con tu usuario a nuestra web y tendrás que volver a registrarte.</div>
-                        <div class="modal-body" style="padding-left:10%; padding-right:10%; ">
-                            <div class="row justify-content-center">
-                                <form action="pabellones.php" method='post'>
-                                    <button type="submit"  class="btn btn-primary" name="aceptar" >ACEPTAR </button>
-                                </form>
-                                <button type="submit"  class="btn btn-primary" name="cancelar" class="close" data-dismiss="modal" aria-label="Close">CANCELAR</button>
+                        <div class="text-center" style="margin-top:5%">Estas seguro de que quieres reservar?</div>
+                        <div class="modal-body text-center">
+                            <div class="row justify-content-center w-20">
+                                <div class=" float-left">
+                                    Fecha de la reserva: <div id="fechamodal"></div>
+                                    Hora de la reserva: <div id="horamodal"></div>
+                                    En el pabellon: <?php echo $_smarty_tpl->tpl_vars['nombrePab']->value;?>
+
+                                </div>
+                                <div class="modal-footer" style="justify-content: center">
+                                    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                                        <input name="cmd" type="hidden" value="_cart" />
+                                        <input name="upload" type="hidden" value="1" />
+                                        <input name="business" type="hidden" value="pgmcastillo98-facilitator@gmail.com" />
+                                        <input name="shopping_url" type="hidden" value="http://localhost/proyecto_fin/reservas.php" />
+                                        <input name="currency_code" type="hidden" value="EUR" />
+                                        <input name="return" type="hidden" value="http://localhost/proyecto_fin/reservas.php" />
+                                        <input name="notify_url" type="hidden" value="http://localhost/proyecto_fin/reservas.php" />
+                                        <input name="rm" type="hidden" value="2" />
+                                        <input type="submit" class="btn btn-primary" name="paypal" alt="Realice pagos con PayPal: es rápido, gratis y seguro" value="REALIZAR PAGO">
+                                        <?php echo $_smarty_tpl->tpl_vars['hiddenPay']->value;?>
+
+                                    </form>
+                                    <form action="calendario.php" method='post'>
+                                        <input type="submit"  class="btn btn-primary" name="cancelar" value="CANCELAR">
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <!---------------- Modal -------------------->
-            <!---------------- Modal -------------------->
-            <?php echo '<script'; ?>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel" style="margin-left:40%">MI PERFIL</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="text-center" style="margin-top:5%"><?php echo $_smarty_tpl->tpl_vars['foto_modal']->value;?>
+</div>
+                            <div class="modal-body" style="padding-left:10%; padding-right:10%; ">
+                                <?php echo $_smarty_tpl->tpl_vars['contenidoModal']->value;?>
+
+                            </div>
+                            <div class="modal-footer" style="justify-content: center">
+                                <form method = 'POST' action = 'pabellones.php'>
+                                    <a class='btn btn-primary' href = 'reservas.php' >Modificar</a>
+                                    <input type = 'submit' type='submit' class='btn btn-primary' name = 'desconectar' value = 'desconectar'>
+                                    <div class="text-center" >
+                                        <a data-toggle="modal" data-target="#exampleModal2" id="enlace_borrar">Eliminar cuenta</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--MODAL DE CONFIRMACION-->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title " id="exampleModalLabel" style="margin-left:30%">TUS PREFERENCIAS</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="text-center" style="margin-top:5%">Estas seguro de que quieres borrar tu cuenta?
+                                Despues de ello no podrás acceder con tu usuario a nuestra web y tendrás que volver a registrarte.</div>
+                            <div class="modal-body" style="padding-left:10%; padding-right:10%; ">
+                                <div class="row justify-content-center">
+                                    <form action="pabellones.php" method='post'>
+                                        <button type="submit"  class="btn btn-primary" name="aceptar" >ACEPTAR </button>
+                                    </form>
+                                    <button type="submit"  class="btn btn-primary" name="cancelar" class="close" data-dismiss="modal" aria-label="Close">CANCELAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <!---------------- Modal -------------------->
+                <!---------------- Modal -------------------->
+                <?php echo '<script'; ?>
  type="text/javascript" src="js/popper.min.js"><?php echo '</script'; ?>
 >
-            <!-- Bootstrap core JavaScript -->
-            <?php echo '<script'; ?>
+                <!-- Bootstrap core JavaScript -->
+                <?php echo '<script'; ?>
  type="text/javascript" src="js/bootstrap.min.js"><?php echo '</script'; ?>
 >
-            <!-- MDB core JavaScript -->
-            <?php echo '<script'; ?>
+                <!-- MDB core JavaScript -->
+                <?php echo '<script'; ?>
  type="text/javascript" src="js/mdb.min.js"><?php echo '</script'; ?>
 >
-            <!-- Initializations -->
-            <?php echo '<script'; ?>
+                <!-- Initializations -->
+                <?php echo '<script'; ?>
  type="text/javascript">
-                // Animations initialization
-                new WOW().init();
-            <?php echo '</script'; ?>
+                    // Animations initialization
+                    new WOW().init();
+                <?php echo '</script'; ?>
 >
 
-    </body>
-</html><?php }
+                </body>
+                </html><?php }
 }

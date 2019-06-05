@@ -29,9 +29,9 @@
                 height: 100%;
             }
 
-            #contenidoPrincipal{
-                margin-left: 10%;
-                margin-right: 10%;
+            #contenidoPabellones{
+                margin-left: 9%;
+                margin-right: 9%;
             }
             .fototxt{
                 text-align: center;
@@ -107,22 +107,27 @@
             <br>
 
         </div>
-        <br> 
+        <section class="separadorPeque"></section> 
         <section class="portadaPabellones text-center w-100 row mx-0">
-            <h2 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">Pabellones</h2>
+            <section class="separadorGrande"></section>
+            <h1 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">Pabellones</h1>
             <p class="subtitulo white-text text-center mx-auto mb-5 col-8">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
                 hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
             <div class="row">
                 <!--listadoMensajes-->
             </div>
         </section>
-        <div id="contenidoPrincipal">
+        <section class="separadorPeque">
+        </section>
+        <div id="contenidoPabellones"> 
             <section class="text-center my-5">
                 <div class="row">
                     {$listadoPabellones}
                 </div>
             </section>
         </div>
+
+
         <!---------------- Modal -------------------->
         <!---------------- Modal -------------------->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

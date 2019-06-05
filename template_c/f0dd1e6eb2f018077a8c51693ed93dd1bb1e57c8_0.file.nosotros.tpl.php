@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-03 23:05:44
+/* Smarty version 3.1.33, created on 2019-06-04 19:03:18
   from 'C:\xampp\htdocs\proyecto_fin\template\nosotros.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf58ba89a0b67_15911332',
+  'unifunc' => 'content_5cf6a4569c5763_09502159',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f0dd1e6eb2f018077a8c51693ed93dd1bb1e57c8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto_fin\\template\\nosotros.tpl',
-      1 => 1559594338,
+      1 => 1559667798,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf58ba89a0b67_15911332 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf6a4569c5763_09502159 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -39,32 +39,6 @@ function content_5cf58ba89a0b67_15911332 (Smarty_Internal_Template $_smarty_tpl)
         <link href="css/style.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="./img/loading.gif" sizes="16x16">
-        <style type="text/css">
-            html,
-            body,
-            header,
-            .view {
-                height: 100%;
-            }
-
-            #contenidoPrincipal{
-                margin-left: 10%;
-                margin-right: 10%;
-            }
-            #enlace_borrar{
-                color: #4285f4;
-                font-size: 15px;
-            }
-
-            #enlace_borrar:hover{
-                color:  #4285b1;
-                font-size: 17px;
-            }
-            .nosotrosContent{
-                background-color: blue;
-            }
-
-        </style>
 
     </head>
     <body>
@@ -127,113 +101,112 @@ function content_5cf58ba89a0b67_15911332 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
             </nav>
         </div>
-        <br> <br>   <br> <br>
-        <div id="contenidoPrincipal">
-            <h2 class="h1-responsive font-weight-bold text-center pat">Nuestra historia</h2>
-            <!-- Section description -->
-            <p class=" text-center mx-auto mb-5">
-                Todo comenzó tras años trabajando, se nos ocurrio la idea de crear nuestra propia empresa 
-                de desarollo y diseño con nuestra propia identidad, capaz de amoldrse 
-                a nuestros clientes y hacer sus sueños realidad.
-                Nuestros sueños son tus sueños.
-            </p>
-        </div>
-        <section class="nosotros my-5">
-            <div id="contenidoPrincipal">
-                <div class="row tituloPricipal">
-                    <div class="fotito col-lg-5">
-                        <div class=" view overlay rounded z-depth-2 mb-lg-0">
-                            <img class="img-fluid" src="./img/nosotros/foto1.jpg" alt="Sample image">
+        <br> <br>   
+        <section class="portadaNosotros  w-100 row mx-0 p-5">
+            <div class="fondoBlanco col-10 mx-auto">
+                <h1 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat">Nuestra historia</h1>
+                <p class="subtitulo text-center mx-auto mb-5 col-10">Todo comenzó tras años trabajando, se nos ocurrio la idea de crear nuestra propia empresa de desarollo y diseño con nuestra propia identidad, capaz de amoldrse a nuestros clientes y hacer sus sueños realidad. Nuestros sueños son tus sueños.</p>
+
+                <section class="nosotros my-5">
+                    <div id="contenidoPrincipal">
+                        <div class="row tituloPricipal">
+                            <div class="fotito col-lg-5">
+                                <div class=" view overlay rounded z-depth-2 mb-lg-0">
+                                    <img class="img-fluid" src="./img/imagenes/soccer.jpg" alt="Sample image">
+                                </div>
+
+                            </div>
+                            <div class="parrafito col-lg-7">
+                                <h6 class="font-weight-bold mb-3"></h6>
+                                <h3 class="font-weight-bold mb-3 pat">La idea</h3>
+
+                                <p>Nuestra empresa NOOK se dedica al desarrollo y diseño de aplicaciones WEB para un gran número de empresas de todo el mundo. Nos encargamos, además, 
+                                    del diseño de productos de identidad corporativa tales como logos, invitaciones, etc... Esperamos que disfruteis de nuestra WEB y contacteis con nsootros cuando sea necesario.</p>
+
+
+                            </div>
+                            <!-- Grid column -->
+
                         </div>
+                        <!-- Grid row -->
 
-                    </div>
-                    <div class="parrafito col-lg-7">
-                        <h6 class="font-weight-bold mb-3"></h6>
-                        <h3 class="font-weight-bold mb-3 pat">La idea</h3>
+                        <hr class="my-5">
 
-                        <p>Nuestra empresa NOOK se dedica al desarrollo y diseño de aplicaciones WEB para un gran número de empresas de todo el mundo. Nos encargamos, además, 
-                            del diseño de productos de identidad corporativa tales como logos, invitaciones, etc... Esperamos que disfruteis de nuestra WEB y contacteis con nsootros cuando sea necesario.</p>
+                        <!-- Grid row -->
+                        <div class="row " >
 
+                            <!-- Grid column -->
+                            <div class="parrafito col-lg-7">
 
-                    </div>
-                    <!-- Grid column -->
+                                <!-- Category -->
+                                <a href="#!" class="pink-text">
 
-                </div>
-                <!-- Grid row -->
-
-                <hr class="my-5">
-
-                <!-- Grid row -->
-                <div class="row " >
-
-                    <!-- Grid column -->
-                    <div class="parrafito col-lg-7">
-
-                        <!-- Category -->
-                        <a href="#!" class="pink-text">
-
-                        </a>
-                        <!-- Post title -->
-                        <h3 class="font-weight-bold mb-3 pat">Nuesta formación</h3>
-                        <!-- Excerpt -->
-                        <p class="fotito">Nuestra empresa NOOK se dedica al desarrollo y diseño de aplicaciones WEB para un gran número de empresas de todo el mundo. Nos encargamos,
-                            además, del diseño de productos de identidad corporativa tales como logos, invitaciones, etc... 
-                            Esperamos que disfruteis de nuestra WEB y contacteis con nsootros cuando sea necesario.</p>
-                        <!-- Post data -->
+                                </a>
+                                <!-- Post title -->
+                                <h3 class="font-weight-bold mb-3 pat">Nuesta formación</h3>
+                                <!-- Excerpt -->
+                                <p class="fotito">Nuestra empresa NOOK se dedica al desarrollo y diseño de aplicaciones WEB para un gran número de empresas de todo el mundo. Nos encargamos,
+                                    además, del diseño de productos de identidad corporativa tales como logos, invitaciones, etc... 
+                                    Esperamos que disfruteis de nuestra WEB y contacteis con nsootros cuando sea necesario.</p>
+                                <!-- Post data -->
 
 
-                    </div>
-                    <!-- Grid column -->
+                            </div>
+                            <!-- Grid column -->
 
-                    <!-- Grid column -->
-                    <div class="col-lg-5">
+                            <!-- Grid column -->
+                            <div class="col-lg-5">
 
-                        <!-- Featured image -->
-                        <div class="view overlay rounded z-depth-2">
-                            <img class="img-fluid" src="./img/nosotros/foto2.jpg" alt="Sample image">
+                                <!-- Featured image -->
+                                <div class="view overlay rounded z-depth-2">
+                                    <img class="img-fluid" src="./img/nosotros/foto1.jpg" alt="Sample image">
+                                </div>
+
+                            </div>
+                            <!-- Grid column -->
+
                         </div>
+                        <!-- Grid row -->
 
-                    </div>
-                    <!-- Grid column -->
+                        <hr class="my-5">
 
-                </div>
-                <!-- Grid row -->
+                        <!-- Grid row -->
+                        <div class="row">
 
-                <hr class="my-5">
+                            <!-- Grid column -->
+                            <div class="  col-lg-5">
 
-                <!-- Grid row -->
-                <div class="row">
+                                <!-- Featured image -->
+                                <div class="view overlay rounded z-depth-2 mb-lg-0">
+                                    <img class="img-fluid" src="./img/imagenes/res.jpg" alt="Sample image">
+                                </div>
 
-                    <!-- Grid column -->
-                    <div class="  col-lg-5">
+                            </div>
+                            <!-- Grid column -->
 
-                        <!-- Featured image -->
-                        <div class="view overlay rounded z-depth-2 mb-lg-0">
-                            <img class="img-fluid" src="./img/nosotros/foto3.jpg" alt="Sample image">
+                            <!-- Grid column -->
+                            <div class="parrafito col-lg-7">
+
+                                <!-- Category -->
+                                <a href="#!" class="indigo-text">
+                                </a>
+                                <!-- Post title -->
+                                <h3 class="font-weight-bold mb-3 pat">Nuestros objetivos</h3>
+                                <!-- Excerpt -->
+                                <p>Nuestra empresa NOOK se dedica al desarrollo y diseño de aplicaciones WEB 
+                                    para un gran número de empresas de todo el mundo.
+                                    Nos encargamos, además, del diseño de productos de identidad corporativa tales como logos, invitaciones, etc...
+                                    Esperamos que disfruteis de nuestra WEB y contacteis con nsootros cuando sea necesario.</p>
+
+
+                            </div>
                         </div>
-
                     </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="parrafito col-lg-7">
-
-                        <!-- Category -->
-                        <a href="#!" class="indigo-text">
-                        </a>
-                        <!-- Post title -->
-                        <h3 class="font-weight-bold mb-3 pat">Nuestros objetivos</h3>
-                        <!-- Excerpt -->
-                        <p>Nuestra empresa NOOK se dedica al desarrollo y diseño de aplicaciones WEB 
-                            para un gran número de empresas de todo el mundo.
-                            Nos encargamos, además, del diseño de productos de identidad corporativa tales como logos, invitaciones, etc...
-                            Esperamos que disfruteis de nuestra WEB y contacteis con nsootros cuando sea necesario.</p>
-
-
-                    </div>
-                </div>
+                </section>
             </div>
         </section>
+
+
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">

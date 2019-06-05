@@ -74,8 +74,8 @@ body,
 
 #hamburguesa {
     position: absolute;
-    right: 60px;
-    top: 7px;
+    right: 70px;
+    top: 20px;
 }
 .enlacesNav{
     margin: inherit;
@@ -190,6 +190,13 @@ body,
     background-position: center center;
     background-size: cover;
 }
+.portadaNosotros{
+    background-image: url("../img/imagenes/zapas.jpg");
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    
+}
 
 .subtitulo{
     padding-left: 10%;
@@ -201,6 +208,7 @@ body,
     background-image: url('../img/imagenes/pabellon.jpg');
     background-repeat: no-repeat; 
     background-size: cover;
+    height: auto;
 }
 html, body, header,.view {
     height: 100%;
@@ -231,4 +239,71 @@ html, body, header,.view {
 }
 .logo{
     width: 200px;
+}
+.fondoBlanco{
+    background-color: rgba(255, 255, 255, 0.9);
+    height: auto;
+}
+html,body,header,.view {
+    height: 100%;
+}
+
+#contenidoNosotros{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#enlace_borrar{
+    color: #4285f4;
+    font-size: 15px;
+}
+
+#enlace_borrar:hover{
+    color:  #4285b1;
+    font-size: 17px;
+}
+.nosotrosContent{
+    background-color: blue;
+}
+
+#datepicker > div > table > tbody > tr > td >a, #datepicker > div > table > tbody > tr > td> span{
+    width: 50px !important;
+    height: 50px !important;
+}
+
+#datepicker{
+    width: auto;
+}
+#datepicker > div{
+    width: auto;
+    margin: auto;
+}
+imagenPabellon{
+    height: 300px !important;
+}
+.seccionMargenes{
+    margin-left: auto;
+    margin-right: auto;
+    padding:0;
+}
+.productImg{
+    height: 100%;
+    background-position: center center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.details {
+    padding: 50px !important;
+    padding-bottom: 0 !important;
+}
+.imgPr{
+    height: 400px;
+}
+
+.tablaRes td  {
+    border: none !important;
+}
+.tablaRes thead tr {
+    background-color: #4285F4;
+    color: white;
+    font-weight: bold !important; 
 }

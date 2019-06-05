@@ -99,7 +99,7 @@
                                         </div>
                                         <div class="text-center">
                                             <span class="nuevo" >¿Eres nuevo?</span> 
-                                            <a  class="olvidado-contrasena" href="#" data-ancla="registro" class="ancla">Registrate ahora</a>
+                                            <a class="olvidado-contrasena ancla" href="#" data-ancla="registro" >Registrate ahora</a>
                                         </div>
                                     </form>
                                 </div>

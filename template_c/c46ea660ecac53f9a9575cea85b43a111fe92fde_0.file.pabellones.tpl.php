@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-04 04:16:01
+/* Smarty version 3.1.33, created on 2019-06-04 18:47:25
   from 'C:\xampp\htdocs\proyecto_fin\template\pabellones.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf5d461983277_87763408',
+  'unifunc' => 'content_5cf6a09d56a211_89348741',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c46ea660ecac53f9a9575cea85b43a111fe92fde' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto_fin\\template\\pabellones.tpl',
-      1 => 1559614558,
+      1 => 1559666844,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf5d461983277_87763408 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf6a09d56a211_89348741 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -52,9 +52,9 @@ function content_5cf5d461983277_87763408 (Smarty_Internal_Template $_smarty_tpl)
                 height: 100%;
             }
 
-            #contenidoPrincipal{
-                margin-left: 10%;
-                margin-right: 10%;
+            #contenidoPabellones{
+                margin-left: 9%;
+                margin-right: 9%;
             }
             .fototxt{
                 text-align: center;
@@ -134,16 +134,19 @@ function content_5cf5d461983277_87763408 (Smarty_Internal_Template $_smarty_tpl)
             <br>
 
         </div>
-        <br> 
+        <section class="separadorPeque"></section> 
         <section class="portadaPabellones text-center w-100 row mx-0">
-            <h2 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">Pabellones</h2>
+            <section class="separadorGrande"></section>
+            <h1 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">Pabellones</h1>
             <p class="subtitulo white-text text-center mx-auto mb-5 col-8">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
                 hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
             <div class="row">
                 <!--listadoMensajes-->
             </div>
         </section>
-        <div id="contenidoPrincipal">
+        <section class="separadorPeque">
+        </section>
+        <div id="contenidoPabellones"> 
             <section class="text-center my-5">
                 <div class="row">
                     <?php echo $_smarty_tpl->tpl_vars['listadoPabellones']->value;?>
@@ -151,6 +154,8 @@ function content_5cf5d461983277_87763408 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
             </section>
         </div>
+
+
         <!---------------- Modal -------------------->
         <!---------------- Modal -------------------->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

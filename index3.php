@@ -110,7 +110,7 @@ if (isset($_POST['f'])) {
     foreach ($horasBloq as $horasB) {
         $horasBloqueadas[] = $horasB['hora'];
     }
-    var_dump($fecha);
+
     $select = '';
     $select .= "<select name ='horaE' id='selectHora' onchange='getval(this); dis(this);' class='custom-select'>";
     $select .= "<option>--Selecciona hora--</option>";

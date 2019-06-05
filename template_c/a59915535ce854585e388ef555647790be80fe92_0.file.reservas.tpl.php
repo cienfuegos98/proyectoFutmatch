@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-04 01:39:03
+/* Smarty version 3.1.33, created on 2019-06-05 15:30:29
   from 'C:\xampp\htdocs\proyecto_fin\template\reservas.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf5af97e254b7_20289954',
+  'unifunc' => 'content_5cf7c3f58132e1_81975131',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a59915535ce854585e388ef555647790be80fe92' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto_fin\\template\\reservas.tpl',
-      1 => 1559594352,
+      1 => 1559741428,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf5af97e254b7_20289954 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf7c3f58132e1_81975131 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
     <head>
@@ -182,29 +182,38 @@ function content_5cf5af97e254b7_20289954 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
             </nav>
             <br>
-            <section class="portadaAdm text-center w-100 row mx-0">
-                <h2 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">Administración</h2>
-                <p class="subtitulo white-text text-center mx-auto mb-5">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
-                    hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
-            </section>
+
         </div>
-        <br><br><br><br>
-        <div id="contenidoPrincipal">    
+        <br><br>
+        <section class="portadaAdm text-center w-100 row mx-0">
+            <h2 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">Administración</h2>
+            <p class="subtitulo white-text text-center mx-auto mb-5">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
+                hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
+        </section>
+        <br><br>
+        <div class="col-sm-11 col-md-10 col-lg-8 mx-auto">
             <?php echo $_smarty_tpl->tpl_vars['tabla']->value;?>
 
-            <?php if (($_smarty_tpl->tpl_vars['tipo']->value == 'pabellon')) {?>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
-                        <div class = 'view zoom'>
-                            <div id="datepicker"></div>
-                            <div id="respuesta"></div>
-                            <div id="respuesta2"></div>
-                            <button  href="calendario.php" data-toggle="modal" id="buttoncancelar" class="btn btn-primary" data-target="#exampleModal3" >PROCEDER A LA RESERVA</button>
-                        </div>
-                    </div>
+        </div>
+        <section class="separadorGrande"></section>    
 
+
+        <?php if (($_smarty_tpl->tpl_vars['tipo']->value == 'pabellon')) {?>
+            <h2 class="text-center">Cancela las sesiones que quieras haciendo una reserva interna</h2>
+            <div class="row">
+                <div class="col-12"> 
+                    <div class = 'mx-auto text-center'>
+                        <div class="input-group date my-5" data-provide="datepicker" id="datepicker"></div>
+                        <div id="respuesta"></div>
+                        <div id="respuesta2"></div>
+                        <button  href="calendario.php" data-toggle="modal" id="buttoncancelar" class="btn btn-primary mx-auto" data-target="#exampleModal3" >PROCEDER A LA RESERVA</button>
+                    </div>
                 </div>
+
+            </div>
+            <div class="col-sm-11 col-md-10 col-lg-8 mx-auto">  
                 <br>
+
                 <div class="card card-image accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
 
                     <!-- Accordion card -->
@@ -222,7 +231,7 @@ function content_5cf5af97e254b7_20289954 (Smarty_Internal_Template $_smarty_tpl)
                         <!-- Card body -->
                         <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordionEx1">
                             <div class="card-body">
-                                <div class="col-md-6 mb-4" style="padding-left:10%;padding-right:10%;padding-top:2%;">
+                                <div class="col-md-12 mb-4" style="padding-left:10%;padding-right:10%;padding-top:2%;">
                                     <!-- Main heading -->
                                     <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
                                     <form name="registro-form-pab" id="registro-form-pab" method="POST" action="reservas.php" enctype="multipart/form-data">
@@ -319,9 +328,11 @@ function content_5cf5af97e254b7_20289954 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                     </div>
                 </div>
-            <?php }?>
-            <?php if (($_smarty_tpl->tpl_vars['tipo']->value == 'user')) {?>
-                <br>
+            </div>
+        <?php }?>
+        <?php if (($_smarty_tpl->tpl_vars['tipo']->value == 'user')) {?>
+            <br>
+            <div class="col-sm-11 col-md-10 col-lg-8 mx-auto">  
                 <div class="card card-image accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
 
                     <!-- Accordion card -->
@@ -406,8 +417,9 @@ function content_5cf5af97e254b7_20289954 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                     </div>
                 </div>
-            <?php }?>
-        </div>
+            </div>
+        <?php }?>
+
         <section class="separadorGrande"></section>
 
         <!---------------- Modal -------------------->

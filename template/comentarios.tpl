@@ -71,7 +71,7 @@
                 </div>
             </nav>
         </div>
-        <br>
+        <br><br><br>
         <section class="portadaForo text-center w-100 row mx-0">
             <h2 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">Foro</h2>
             <p class="subtitulo white-text text-center mx-auto mb-5">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
