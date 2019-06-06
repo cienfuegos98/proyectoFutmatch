@@ -168,8 +168,8 @@
             <div class="row">
                 <div class="col-12"> 
                     <div class = 'mx-auto text-center'>
-                        <div class="input-group date my-5" data-provide="datepicker" id="datepicker"></div>
-                        <div id="respuesta"></div>
+                        <div class="input-group date my-3" data-provide="datepicker" id="datepicker"></div>
+                        <div id="respuesta" class="col-sm-5 col-lg-2 mx-auto  my-3"></div>
                         <div id="respuesta2"></div>
                         <button  href="calendario.php" data-toggle="modal" id="buttoncancelar" class="btn btn-primary mx-auto" data-target="#exampleModal3" >PROCEDER A LA RESERVA</button>
                     </div>

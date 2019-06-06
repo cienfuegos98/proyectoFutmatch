@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-06 00:18:08
+/* Smarty version 3.1.33, created on 2019-06-06 17:28:59
   from 'C:\xampp\htdocs\proyecto_fin\template\reservas.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf83fa0b76b04_68227440',
+  'unifunc' => 'content_5cf9313bac8e65_64648591',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a59915535ce854585e388ef555647790be80fe92' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto_fin\\template\\reservas.tpl',
-      1 => 1559773081,
+      1 => 1559834936,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf83fa0b76b04_68227440 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf9313bac8e65_64648591 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
     <head>
@@ -202,8 +202,8 @@ function content_5cf83fa0b76b04_68227440 (Smarty_Internal_Template $_smarty_tpl)
             <div class="row">
                 <div class="col-12"> 
                     <div class = 'mx-auto text-center'>
-                        <div class="input-group date my-5" data-provide="datepicker" id="datepicker"></div>
-                        <div id="respuesta"></div>
+                        <div class="input-group date my-3" data-provide="datepicker" id="datepicker"></div>
+                        <div id="respuesta" class="col-sm-5 col-lg-2 mx-auto  my-3"></div>
                         <div id="respuesta2"></div>
                         <button  href="calendario.php" data-toggle="modal" id="buttoncancelar" class="btn btn-primary mx-auto" data-target="#exampleModal3" >PROCEDER A LA RESERVA</button>
                     </div>

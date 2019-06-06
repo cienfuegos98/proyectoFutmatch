@@ -287,7 +287,7 @@ if (empty($_SESSION['usuario'])) {
         }
 
         $tabla .= "</tbody></table>";
-        $f = "SELECT fecha_reserva FROM `reservas` WHERE fecha_reserva >= '$fecha_actual' AND uid = $uid";
+        $f = "SELECT fecha_reserva FROM `reservas` WHERE fecha_reserva > '$fecha_actual' AND uid = $uid";
         $fechas_aux = $con->selection($f);
         if ($fechas_aux != null) {
             $plantilla->assign('tabla', $tabla);
@@ -321,6 +321,8 @@ if (empty($_SESSION['usuario'])) {
                 $ins = "INSERT INTO `reservas` "
                         . "VALUES('','$fecha_d_reserva',$hora_reserva,$uid,$pid,'$fecha_d_pago', '$precio')";
                 $con->run($ins);
+                $error = $con->getError();
+                var_dump($error);
                 header("location:reservas.php");
             }
         }

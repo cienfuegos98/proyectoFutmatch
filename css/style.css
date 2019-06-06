@@ -266,8 +266,7 @@ imagenPabellon {
   background-repeat: no-repeat; }
 
 .details {
-  padding: 50px !important;
-  padding-bottom: 0 !important; }
+  padding: 50px !important; }
 
 .imgPr {
   height: 400px; }
@@ -279,5 +278,8 @@ imagenPabellon {
   background-color: #4285F4;
   color: white;
   font-weight: bold !important; }
+
+.dpicker {
+  margin-bottom: 10px !important; }
 
 /*# sourceMappingURL=style.css.map */
