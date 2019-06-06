@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-05 15:30:29
+/* Smarty version 3.1.33, created on 2019-06-06 00:18:08
   from 'C:\xampp\htdocs\proyecto_fin\template\reservas.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf7c3f58132e1_81975131',
+  'unifunc' => 'content_5cf83fa0b76b04_68227440',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a59915535ce854585e388ef555647790be80fe92' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto_fin\\template\\reservas.tpl',
-      1 => 1559741428,
+      1 => 1559773081,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf7c3f58132e1_81975131 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf83fa0b76b04_68227440 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
     <head>
@@ -187,7 +187,7 @@ function content_5cf7c3f58132e1_81975131 (Smarty_Internal_Template $_smarty_tpl)
         <br><br>
         <section class="portadaAdm text-center w-100 row mx-0">
             <h2 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">Administración</h2>
-            <p class="subtitulo white-text text-center mx-auto mb-5">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
+            <p class="subtitulo white-text text-center mx-auto mb-5 col-8">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
                 hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
         </section>
         <br><br>
@@ -196,7 +196,6 @@ function content_5cf7c3f58132e1_81975131 (Smarty_Internal_Template $_smarty_tpl)
 
         </div>
         <section class="separadorGrande"></section>    
-
 
         <?php if (($_smarty_tpl->tpl_vars['tipo']->value == 'pabellon')) {?>
             <h2 class="text-center">Cancela las sesiones que quieras haciendo una reserva interna</h2>
@@ -215,10 +214,8 @@ function content_5cf7c3f58132e1_81975131 (Smarty_Internal_Template $_smarty_tpl)
                 <br>
 
                 <div class="card card-image accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
-
                     <!-- Accordion card -->
                     <div class="card">
-
                         <!-- Card header -->
                         <div class="card-header" role="tab" id="headingTwo1">
                             <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"

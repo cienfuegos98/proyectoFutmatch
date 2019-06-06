@@ -109,7 +109,7 @@ if (empty($_SESSION['usuario'])) {
                 $tabla .= "<td>";
                 $tabla .= $valores['precio'];
                 $tabla .= "</td>";
-                $tabla .= "</tr><tr><td colspan=6 class='text-center'>";
+                $tabla .= "</tr><tr><td colspan=6  class='text-center col-12'>";
                 $tabla .= "<form method = 'POST' action = 'reservas.php'>"
                         . "<input type = 'hidden' name = 'rid_borrar' value = '" . $valores['rid'] . "' > "
                         . "<input type = 'hidden' name = 'uid' value = '" . $valores['uid'] . "' > "
@@ -253,9 +253,6 @@ if (empty($_SESSION['usuario'])) {
                 $tabla .= $valores['hora'] . ':00';
                 $tabla .= "</td>";
                 $tabla .= "<td>";
-                $tabla .= $nombreC;
-                $tabla .= "</td>";
-                $tabla .= "<td>";
                 $tabla .= $valores['fecha_actual_reserva'];
                 $tabla .= "</td>";
                 $tabla .= "<td>";
@@ -266,20 +263,20 @@ if (empty($_SESSION['usuario'])) {
                 $tabla .= "</td><tr>";
 
                 if (calcular_fecha($valores['fecha_reserva'], date("Y-m-d")) > 0) {
-                    $tabla .= "<td colspan=7 class='text-center'> ";
+                    $tabla .= "<td colspan=7 class='text-center col-12'> ";
                     $tabla .= "<form method = 'POST' action = 'reservas.php'>"
                             . "<input type = 'hidden' name = 'rid_borrar' value = '" . $valores['rid'] . "' > "
-                            . "<input type = 'submit' class = 'btn btn-primary' name = 'eliminar' value = 'Eliminar reserva'>"
+                            . "<input type = 'submit' class = 'btn btn-primary col-12' name = 'eliminar' value = 'Eliminar reserva'>"
                             . "</form>";
                     $tabla .= "</td>";
 
                     $tabla .= "</tr>";
                 } else if (calcular_fecha($valores['fecha_reserva'], date("Y-m-d")) == 0) {
                     if ($valores['hora'] > date("H")) {
-                        $tabla .= "<td>";
+                        $tabla .= "<td colspan=7 class='text-center col-12'> ";
                         $tabla .= "<form method = 'POST' action = 'reservas.php'>"
                                 . "<input type = 'hidden' name = 'rid_borrar' value = '" . $valores['rid'] . "' > "
-                                . "<input type = 'submit' class = 'btn btn-primary' name = 'eliminar' value = 'Eliminar reserva'>"
+                                . "<input type = 'submit' class = 'btn btn-primary ' name = 'eliminar' value = 'Eliminar reserva'>"
                                 . "</form>";
                         $tabla .= "</td>";
 
@@ -420,9 +417,11 @@ function headerTable($tipo) {
     $tabla .= "<td>";
     $tabla .= "Hora de la reserva";
     $tabla .= "</td>";
-    $tabla .= "<td>";
-    $tabla .= 'Nombre completo del usuario';
-    $tabla .= "</td>";
+    if ($tipo == 'pabellon') {
+        $tabla .= "<td>";
+        $tabla .= 'Nombre completo del usuario';
+        $tabla .= "</td>";
+    }
     $tabla .= "<td>";
     $tabla .= 'Fecha de la solicitud';
     $tabla .= "</td>";

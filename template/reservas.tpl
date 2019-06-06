@@ -154,7 +154,7 @@
         <br><br>
         <section class="portadaAdm text-center w-100 row mx-0">
             <h2 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">Administración</h2>
-            <p class="subtitulo white-text text-center mx-auto mb-5">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
+            <p class="subtitulo white-text text-center mx-auto mb-5 col-8">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
                 hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
         </section>
         <br><br>

@@ -35,7 +35,11 @@ if (isset($_POST['iniciar'])) {
         $_SESSION['usuario']['id'] = $id;
         $tipo = $con->compruebaTipo($id);
         $_SESSION['tipo'] = $tipo;
-        header("Location:pabellones.php");
+        if ($tipo == 'user') {
+            header("Location:pabellones.php");
+        } else if ($tipo == 'pabellon') {
+            header("Location:reservas.php");
+        }
     } else {
         $error = "Usuario o contraseña desconocidos";
         $plantilla->assign('error', $error);

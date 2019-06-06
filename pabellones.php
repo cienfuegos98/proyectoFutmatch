@@ -14,8 +14,6 @@ $plantilla->compile_dir = "./template_c";
 
 $con = new BD();
 
-
-
 if (empty($_SESSION['usuario'])) {
     $plantilla->assign('tipo', '');
     $loginNav = "<li class='nav-item '>
@@ -95,12 +93,10 @@ if (empty($_SESSION['usuario'])) {
             $datosRe = $con->selection($q);
             if (isset($datosRe[0])) {
                 $fecha = $datosRe[0]['fecha_reserva'];
-
                 $hora = $datosRe[0]['hora'];
+                $f = date("d-m-Y", strtotime($fecha));
+                $load = "onload=alerta('$f',$hora)";
             }
-            $f = date("d-m-Y", strtotime($fecha));
-            $load = "onload=alerta('$f',$hora)";
-
             $_SESSION['auxiliar'] = true;
         }
         $plantilla->assign('load', $load);

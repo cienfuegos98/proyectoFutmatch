@@ -112,6 +112,10 @@
                 color:  #4285b1;
                 font-size: 17px;
             }
+            .modalPago{
+                padding-left: 15%;
+                padding-right: 15%;
+            }
         </style>
     </head>
     <body>
@@ -145,7 +149,7 @@
         <br><br>
         <section class="portadaPabellones text-center w-100 row mx-0">
             <h1 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">{$nombrePab}</h1>
-            <p class="subtitulo white-text text-center mx-auto mb-5">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
+            <p class="subtitulo white-text text-center mx-auto mb-5 col-8">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
                 hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
         </section>
 
@@ -183,7 +187,6 @@
                                     <div id="respuesta"></div>
                                     <div id="respuesta2"></div>
                                     <button disabled href="calendario.php" data-toggle="modal" id="a_modal" class="btn btn-primary mx-auto" data-target="#exampleModal2" >PROCEDER A LA RESERVA</button>
-                                    <!--<a id="a_modal" class="btn btn-primary">PROCEDER A LA RESERVA</a>-->
                                     <section class="separadorGrande"></section>
                                 </div>
                             </div>
@@ -241,15 +244,17 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="text-center" style="margin-top:5%">Estas seguro de que quieres reservar?</div>
-                        <div class="modal-body text-center">
-                            <div class="row justify-content-center w-20">
-                                <div class=" float-left">
-                                    Fecha de la reserva: <div id="fechamodal"></div>
-                                    Hora de la reserva: <div id="horamodal"></div>
-                                    En el pabellon: {$nombrePab}
+                        <h4 class="text-center modalPago" style="margin-top:5%" >Estas seguro de que quieres reservar?</h4>
+                        <div class="modal-body float-left ">
+                            <div class="row w-20 ">
+                                <div class="modalPago">
+                                    <div class="col-12 float-left"><label>Fecha de la reserva:</label> <span id="fechamodal" class=" font-weight-bold"></span></div>
+
+                                    <div class="col-12 float-left"> <label>Hora de la reserva:</label> <span id="horamodal"  class=" font-weight-bold"></span></div>
+
+                                    <div class="col-12 float-left font-weight-bold">Reserva realizada en el {$nombrePab}</div>
                                 </div>
-                                <div class="modal-footer" style="justify-content: center">
+                                <div class="modal-footer col-12 justify-content-center">
                                     <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                                         <input name="cmd" type="hidden" value="_cart" />
                                         <input name="upload" type="hidden" value="1" />
@@ -262,10 +267,10 @@
                                         <input type="submit" class="btn btn-primary" name="paypal" alt="Realice pagos con PayPal: es rápido, gratis y seguro" value="REALIZAR PAGO">
                                         {$hiddenPay}
                                     </form>
-                                    <form action="calendario.php" method='post'>
-                                        <input type="submit"  class="btn btn-primary" name="cancelar" value="CANCELAR">
-                                    </form>
+                                    <button type="submit"  class="btn btn-primary" name="cancelar" class="close" data-dismiss="modal" aria-label="Close">CANCELAR</button>
+
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -318,7 +323,6 @@
                         </div>
                     </div>
                 </div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <!---------------- Modal -------------------->
                 <!---------------- Modal -------------------->
                 <script type="text/javascript" src="js/popper.min.js"></script>

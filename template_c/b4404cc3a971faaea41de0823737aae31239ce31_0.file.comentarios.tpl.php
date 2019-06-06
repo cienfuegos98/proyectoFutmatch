@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-05 13:40:14
+/* Smarty version 3.1.33, created on 2019-06-06 00:20:30
   from 'C:\xampp\htdocs\proyecto_fin\template\comentarios.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf7aa1e16e798_57922772',
+  'unifunc' => 'content_5cf8402e429297_80299511',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b4404cc3a971faaea41de0823737aae31239ce31' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto_fin\\template\\comentarios.tpl',
-      1 => 1559734812,
+      1 => 1559773228,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf7aa1e16e798_57922772 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf8402e429297_80299511 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -100,7 +100,7 @@ function content_5cf7aa1e16e798_57922772 (Smarty_Internal_Template $_smarty_tpl)
         <br><br><br>
         <section class="portadaForo text-center w-100 row mx-0">
             <h2 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text">Foro</h2>
-            <p class="subtitulo white-text text-center mx-auto mb-5">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
+            <p class="subtitulo white-text text-center mx-auto mb-5 col-8">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
                 hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
             <div class="row">
                 <!--listadoMensajes-->

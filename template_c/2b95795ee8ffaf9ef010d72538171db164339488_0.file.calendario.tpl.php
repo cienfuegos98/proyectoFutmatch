@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-05 13:32:47
+/* Smarty version 3.1.33, created on 2019-06-06 03:19:46
   from 'C:\xampp\htdocs\proyecto_fin\template\calendario.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf7a85ff1c5d7_90436064',
+  'unifunc' => 'content_5cf86a329306e6_46521580',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2b95795ee8ffaf9ef010d72538171db164339488' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto_fin\\template\\calendario.tpl',
-      1 => 1559734365,
+      1 => 1559783984,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf7a85ff1c5d7_90436064 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf86a329306e6_46521580 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
     <head>
@@ -143,6 +143,10 @@ function content_5cf7a85ff1c5d7_90436064 (Smarty_Internal_Template $_smarty_tpl)
                 color:  #4285b1;
                 font-size: 17px;
             }
+            .modalPago{
+                padding-left: 15%;
+                padding-right: 15%;
+            }
         </style>
     </head>
     <body>
@@ -178,7 +182,7 @@ function content_5cf7a85ff1c5d7_90436064 (Smarty_Internal_Template $_smarty_tpl)
         <section class="portadaPabellones text-center w-100 row mx-0">
             <h1 class="col-12 text-center h1-responsive font-weight-bold text-center my-5 pat white-text"><?php echo $_smarty_tpl->tpl_vars['nombrePab']->value;?>
 </h1>
-            <p class="subtitulo white-text text-center mx-auto mb-5">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
+            <p class="subtitulo white-text text-center mx-auto mb-5 col-8">Aqui os adjuntamos nuestros proyectos tanto web como corporativos, realizados desde la creación de la empresa
                 hasta la actualidad y nuestras 4 mejores ventas ordenadas por el precio.</p>
         </section>
 
@@ -227,7 +231,6 @@ function content_5cf7a85ff1c5d7_90436064 (Smarty_Internal_Template $_smarty_tpl)
                                     <div id="respuesta"></div>
                                     <div id="respuesta2"></div>
                                     <button disabled href="calendario.php" data-toggle="modal" id="a_modal" class="btn btn-primary mx-auto" data-target="#exampleModal2" >PROCEDER A LA RESERVA</button>
-                                    <!--<a id="a_modal" class="btn btn-primary">PROCEDER A LA RESERVA</a>-->
                                     <section class="separadorGrande"></section>
                                 </div>
                             </div>
@@ -292,16 +295,18 @@ function content_5cf7a85ff1c5d7_90436064 (Smarty_Internal_Template $_smarty_tpl)
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="text-center" style="margin-top:5%">Estas seguro de que quieres reservar?</div>
-                        <div class="modal-body text-center">
-                            <div class="row justify-content-center w-20">
-                                <div class=" float-left">
-                                    Fecha de la reserva: <div id="fechamodal"></div>
-                                    Hora de la reserva: <div id="horamodal"></div>
-                                    En el pabellon: <?php echo $_smarty_tpl->tpl_vars['nombrePab']->value;?>
+                        <h4 class="text-center modalPago" style="margin-top:5%" >Estas seguro de que quieres reservar?</h4>
+                        <div class="modal-body float-left ">
+                            <div class="row w-20 ">
+                                <div class="modalPago">
+                                    <div class="col-12 float-left"><label>Fecha de la reserva:</label> <span id="fechamodal" class=" font-weight-bold"></span></div>
 
+                                    <div class="col-12 float-left"> <label>Hora de la reserva:</label> <span id="horamodal"  class=" font-weight-bold"></span></div>
+
+                                    <div class="col-12 float-left font-weight-bold">Reserva realizada en el <?php echo $_smarty_tpl->tpl_vars['nombrePab']->value;?>
+</div>
                                 </div>
-                                <div class="modal-footer" style="justify-content: center">
+                                <div class="modal-footer col-12 justify-content-center">
                                     <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                                         <input name="cmd" type="hidden" value="_cart" />
                                         <input name="upload" type="hidden" value="1" />
@@ -315,10 +320,10 @@ function content_5cf7a85ff1c5d7_90436064 (Smarty_Internal_Template $_smarty_tpl)
                                         <?php echo $_smarty_tpl->tpl_vars['hiddenPay']->value;?>
 
                                     </form>
-                                    <form action="calendario.php" method='post'>
-                                        <input type="submit"  class="btn btn-primary" name="cancelar" value="CANCELAR">
-                                    </form>
+                                    <button type="submit"  class="btn btn-primary" name="cancelar" class="close" data-dismiss="modal" aria-label="Close">CANCELAR</button>
+
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -373,7 +378,6 @@ function content_5cf7a85ff1c5d7_90436064 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                     </div>
                 </div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <!---------------- Modal -------------------->
                 <!---------------- Modal -------------------->
                 <?php echo '<script'; ?>
